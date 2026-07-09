@@ -1,0 +1,35 @@
+{
+  "stage_id": "1013R_R223N_CROSS_SAMPLE_CLASSROOM_EVENT_EXPANSION_VALIDATION",
+  "created_at_utc": "2026-07-09T10:10:19.831040+00:00",
+  "source_sample": "有趣的纸印",
+  "source_docx": "E:/学校工作/教学/教学资料/三年级美术上册官方教学设计参考/第五单元 有趣的纸印.docx",
+  "standard_source": "R223M-P5",
+  "files": [
+    "R223N_cross_sample_selection_note.md",
+    "R223N_paper_print_reasoning_chain_product.md",
+    "R223N_classroom_event_expansion_chain.json",
+    "R223N_teacher_default_reading_draft.md",
+    "R223N_teacher_default_reading_draft.html",
+    "R223N_teacher_default_reading_draft_screenshot.png",
+    "R223N_browser_smoke_result.json",
+    "R223N_review_ledger_sample.json",
+    "R223N_component_screen_evidence_trigger_map.md",
+    "R223N_rubric_score.md",
+    "R223N_cross_sample_validation_report.md",
+    "generate_r223n_package.py",
+    "validate_1013R_R223N_cross_sample_classroom_event_expansion.py",
+    "validate_1013R_R223N_cross_sample_classroom_event_expansion_result.json",
+    "PACKAGE_MANIFEST.json",
+    "README_FOR_GPT_REVIEW.md"
+  ],
+  "boundary": {
+    "preview_only": true,
+    "teacher_confirmed": false,
+    "formal_apply_allowed": false,
+    "r97b_modified": false,
+    "ui_modified": false,
+    "runtime_connected": false,
+    "provider_model_connected": false,
+    "database_written": false
+  }
+}
