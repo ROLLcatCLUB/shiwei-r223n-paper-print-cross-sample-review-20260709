@@ -1,0 +1,438 @@
+{
+  "stage_id": "1013R_R223N_CROSS_SAMPLE_CLASSROOM_EVENT_EXPANSION_VALIDATION",
+  "standard_id": "GOLDEN_CLASSROOM_EVENT_EXPANSION_STANDARD_V0.1_LOCK_CANDIDATE",
+  "sample": "有趣的纸印",
+  "default_teacher_view_must_not_show_full_ledger": true,
+  "entries": [
+    {
+      "event_id": "paper_print_event_01_task_entry",
+      "event_name": "任务入场：走进版画车间坊",
+      "default_teacher_visible": {
+        "teacher_focus": "不要把版画车间坊说成普通作品展，先把学生眼睛带到“印痕”上。",
+        "downstream_impact": {
+          "screen": "版画车间坊任务语 + 画出来/印出来对比图 + 记录句式",
+          "learning_sheet": "入场记录",
+          "evidence": "能说出一个印痕观察点。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "把课堂从普通纸手工拉回版画语言，明确本课要寻找纸材、印法和印痕之间的关系。",
+          "why_it_matters": "学生容易把任务理解成随便做纸作品，忽视“印出来的痕迹”才是本单元要研究的核心。",
+          "risk_if_skipped": [
+            "只关注作品好不好看，忘记记录纸材和印法。",
+            "把版画车间坊理解成普通展板布置。",
+            "不知道印痕和画出来的线条有什么区别。"
+          ],
+          "minimum_success_signal": "能说出一个印痕观察点。"
+        },
+        "control_points_full": {
+          "observe": "学生是否能说出印痕与绘画线条的差别。",
+          "ask_when": "学生只说好看或图案时，追问痕迹从哪里来。",
+          "rescue_when": "任务理解偏向纸手工时，立即用对比图拉回印痕。",
+          "screen_when": "任务释放和误解出现时。",
+          "component_when": "需要区分两个视觉样本时。",
+          "evidence_when": "学生完成第一句观察记录后。",
+          "proceed_when": "多数学生能说出一个纸材或印法可能影响印痕的点。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "任务释放前",
+          "content": "版画车间坊任务语 + 画出来/印出来对比图 + 记录句式"
+        },
+        "component_trigger": {
+          "component_id": "compare_two_images",
+          "component_name": "比一比",
+          "trigger_condition": "学生把任务理解成普通纸作品时",
+          "student_problem_solved": "区分绘画线条与纸材印痕。",
+          "alternative_component": "circle_and_annotate",
+          "expected_evidence": "学生能圈出一处印痕并说出它不是画出来的。"
+        },
+        "learning_sheet_trigger": {
+          "field": "入场记录",
+          "prompt": "我发现印痕和画线不同的地方是……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "口头说明 + 圈画记录",
+          "collect_when": "任务入场 3 分钟内",
+          "minimum_evidence": "能说出一个印痕观察点。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "单元表现性任务 / 第一阶段学习活动",
+          "evidence": "用版画作品装饰“版画车间坊”；明确单元任务，了解各种纸材及它的纹理。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_02_material_texture_observation",
+      "event_name": "摸一摸：纸材肌理观察",
+      "default_teacher_visible": {
+        "teacher_focus": "观察不是热身，必须留下“我预测”的理由，后面才能验证。",
+        "downstream_impact": {
+          "screen": "纸材观察词库 + 侧光肌理照片 + 一句预测格式",
+          "learning_sheet": "纸材预测",
+          "evidence": "每组至少一条带理由的纸材预测。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "让学生用手摸、眼看、侧光观察等方式，把纸材差异转化为可以预测印痕的依据。",
+          "why_it_matters": "学生知道纸不一样，但容易只说厚薄、颜色，不能把肌理和后面印出来的效果联系起来。",
+          "risk_if_skipped": [
+            "只按颜色或大小分类。",
+            "摸完没有语言描述，只说“这个好”。",
+            "认为最厚的纸一定印痕最好。"
+          ],
+          "minimum_success_signal": "每组至少一条带理由的纸材预测。"
+        },
+        "control_points_full": {
+          "observe": "学生是否能用肌理词描述纸材，而不只说颜色。",
+          "ask_when": "学生给出预测但没有依据时。",
+          "rescue_when": "分类只停在颜色大小时。",
+          "screen_when": "词汇不足或观察方向散乱时。",
+          "component_when": "需要把视觉观察转为触觉观察时。",
+          "evidence_when": "每组确定试印纸材前。",
+          "proceed_when": "每组能说出一种纸材特性和一个印痕预测。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "观察前和分类混乱时",
+          "content": "纸材观察词库 + 侧光肌理照片 + 一句预测格式"
+        },
+        "component_trigger": {
+          "component_id": "material_blind_box",
+          "component_name": "材料盲盒",
+          "trigger_condition": "学生只看颜色或外形时",
+          "student_problem_solved": "让学生用触觉和肌理词汇认识材料差异。",
+          "alternative_component": "circle_and_annotate",
+          "expected_evidence": "一条纸材预测记录。"
+        },
+        "learning_sheet_trigger": {
+          "field": "纸材预测",
+          "prompt": "我选择的纸材是……我预测它会留下……印痕，因为……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "纸材分类表 + 预测句",
+          "collect_when": "试印前",
+          "minimum_evidence": "每组至少一条带理由的纸材预测。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "学情分析 / 第一阶段学习任务",
+          "evidence": "学生对肌理有初步认识；寻找不同质感纸材，分析纸张印痕。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_03_texture_making",
+      "event_name": "变一变：制造纸的新肌理",
+      "default_teacher_visible": {
+        "teacher_focus": "限制方法数量，宁可小而清楚，不要复杂但印不出来。",
+        "downstream_impact": {
+          "screen": "刻/剪/撕/拼贴/揉/卷/折方法图 + 小块试验提醒",
+          "learning_sheet": "改造方法",
+          "evidence": "每组保留一个改造小样。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "让学生理解纸材不是被动材料，可以通过改造制造新的可印肌理。",
+          "why_it_matters": "学生可能把改造理解成做造型或装饰，忽略改造后要能留下可辨认的印痕。",
+          "risk_if_skipped": [
+            "剪成复杂造型却没有可印纹理。",
+            "拼贴太厚导致试印时压不平。",
+            "方法太多，时间失控。"
+          ],
+          "minimum_success_signal": "每组保留一个改造小样。"
+        },
+        "control_points_full": {
+          "observe": "学生改造是否能形成可印肌理。",
+          "ask_when": "学生只追求形状或装饰时。",
+          "rescue_when": "拼贴过厚、方法过多或时间失控时。",
+          "screen_when": "动作不清楚或小样不成立时。",
+          "component_when": "需要拆技法步骤时。",
+          "evidence_when": "小样完成后、试印前。",
+          "proceed_when": "每组至少有一块可试印小样。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "纸材改造开始前",
+          "content": "刻/剪/撕/拼贴/揉/卷/折方法图 + 小块试验提醒"
+        },
+        "component_trigger": {
+          "component_id": "technique_breakdown",
+          "component_name": "技法拆解",
+          "trigger_condition": "学生不知道如何把纸变出肌理时",
+          "student_problem_solved": "把纸材改造拆成可操作的小动作。",
+          "alternative_component": "error_repair_demo",
+          "expected_evidence": "一块能说明改造方法的试印版。"
+        },
+        "learning_sheet_trigger": {
+          "field": "改造方法",
+          "prompt": "我用……方法让纸出现了……肌理。"
+        },
+        "evidence_trigger": {
+          "evidence_type": "改造小样 + 方法记录",
+          "collect_when": "正式试印前",
+          "minimum_evidence": "每组保留一个改造小样。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "第一阶段学习活动",
+          "evidence": "运用刻、剪、撕、拼贴、揉、卷、折等方法，创造纸的新肌理。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_04_first_print_trial",
+      "event_name": "试一试：第一次转印",
+      "default_teacher_visible": {
+        "teacher_focus": "第一次试印不是成品，关键是让学生留下可比较、可调整的证据。",
+        "downstream_impact": {
+          "screen": "少量上色、均匀压印、慢揭纸三步图 + 清楚/糊印对比",
+          "learning_sheet": "试印记录",
+          "evidence": "每组至少一张有圈画和一句调整计划的试印记录。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "把纸材预测转化为可观察的印痕证据，让学生建立试印、比较、记录的基本习惯。",
+          "why_it_matters": "学生容易一次印完就急着下结论，不看用力、颜料多少、纸材方向怎样影响印痕。",
+          "risk_if_skipped": [
+            "颜料太多或太少，导致印痕糊成一片或印不出来。",
+            "用力不均，无法判断是纸材问题还是操作问题。",
+            "只说好看不好看，不记录原因。"
+          ],
+          "minimum_success_signal": "每组至少一张有圈画和一句调整计划的试印记录。"
+        },
+        "control_points_full": {
+          "observe": "学生是否能指出清楚或模糊印痕的具体位置。",
+          "ask_when": "学生只评价好看时。",
+          "rescue_when": "糊印、漏印或无法记录原因时。",
+          "screen_when": "需要统一操作关键动作时。",
+          "component_when": "需要把观察固定到试印纸上时。",
+          "evidence_when": "第一次试印完成立即收。",
+          "proceed_when": "学生能提出一个下一次试印调整方向。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "第一次试印前和糊印较多时",
+          "content": "少量上色、均匀压印、慢揭纸三步图 + 清楚/糊印对比"
+        },
+        "component_trigger": {
+          "component_id": "circle_and_annotate",
+          "component_name": "圈一圈",
+          "trigger_condition": "学生只看整体效果、不看具体印痕时",
+          "student_problem_solved": "把评价落到具体可见印痕。",
+          "alternative_component": "compare_two_images",
+          "expected_evidence": "圈出一处清楚印痕并写调整计划。"
+        },
+        "learning_sheet_trigger": {
+          "field": "试印记录",
+          "prompt": "第一次试印：最清楚的地方是……我想调整……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "试印纸 + 圈画标注 + 调整计划",
+          "collect_when": "第一次试印后",
+          "minimum_evidence": "每组至少一张有圈画和一句调整计划的试印记录。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "第二阶段学习活动 / 单元评价方案",
+          "evidence": "充分利用纸材纹理，经过染色或拓印形成作品；在探索和发现过程中养成随时记录的习惯。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_05_print_method_comparison",
+      "event_name": "比一比：干印、湿印与油印",
+      "default_teacher_visible": {
+        "teacher_focus": "不要急着讲全套术语，先让学生看见同一块版在不同印法下的差异。",
+        "downstream_impact": {
+          "screen": "同版不同印法对照图 + 清晰边缘/灰层/肌理保留观察角度",
+          "learning_sheet": "印法比较",
+          "evidence": "每组至少一组同版不同印法对照。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "让学生在比较中理解印法不是名称记忆，而是会改变印痕清晰度、灰层和画面效果的选择。",
+          "why_it_matters": "学生容易把干印、湿印、油印当作术语背诵，不能说出哪种印法适合自己的纸材和画面需要。",
+          "risk_if_skipped": [
+            "只记住名称，无法描述差异。",
+            "追求颜色浓却忽视印痕层次。",
+            "一组同时试太多方法，记录混乱。"
+          ],
+          "minimum_success_signal": "每组至少一组同版不同印法对照。"
+        },
+        "control_points_full": {
+          "observe": "学生是否能用清晰、灰层、肌理等词比较印法。",
+          "ask_when": "学生只说某种印法好看或颜色重时。",
+          "rescue_when": "术语背诵、比较混乱或记录不清时。",
+          "screen_when": "需要用同版对照统一观察标准时。",
+          "component_when": "需要对比两种印法效果时。",
+          "evidence_when": "学生做出正式印法选择前。",
+          "proceed_when": "每组能说明纸材、印法和预期效果的关系。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "印法比较和选择理由不足时",
+          "content": "同版不同印法对照图 + 清晰边缘/灰层/肌理保留观察角度"
+        },
+        "component_trigger": {
+          "component_id": "compare_two_images",
+          "component_name": "比一比",
+          "trigger_condition": "学生无法说出印法差异时",
+          "student_problem_solved": "把技法术语转化为可见效果比较。",
+          "alternative_component": "match_cards",
+          "expected_evidence": "印法-效果-选择理由三联记录。"
+        },
+        "learning_sheet_trigger": {
+          "field": "印法比较",
+          "prompt": "我比较了……和……，我选择……，因为它让印痕……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "两张对照试印 + 三联选择理由",
+          "collect_when": "正式创作前",
+          "minimum_evidence": "每组至少一组同版不同印法对照。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "第三阶段学习活动 / 单元评价方案",
+          "evidence": "用干印法、湿印法、干湿法、油印法印制；掌握干印、水印、油印技法；注意轻重缓急形成黑、灰层面。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_06_artwork_creation_with_print_marks",
+      "event_name": "做一做：用印痕完成作品",
+      "default_teacher_visible": {
+        "teacher_focus": "作品完成不是越满越好，要保留一个能说清来源和效果的关键印痕。",
+        "downstream_impact": {
+          "screen": "一主一辅画面提示 + 印痕过多/重点清楚作品对比 + 清理提示",
+          "learning_sheet": "作品取舍",
+          "evidence": "作品中至少有一处可说明来源的印痕。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "引导学生把前面的纸材、肌理、印法选择转化为有画面意识的作品，而不是试印纸堆叠。",
+          "why_it_matters": "学生可能印了很多痕迹但画面杂乱，或者为了完成作品放弃前面试验中发现的好印痕。",
+          "risk_if_skipped": [
+            "把所有试过的材料都印上去，画面没有重点。",
+            "为了完整图案而覆盖掉最有特色的印痕。",
+            "清洁习惯不足，油墨或颜料污染作品。"
+          ],
+          "minimum_success_signal": "作品中至少有一处可说明来源的印痕。"
+        },
+        "control_points_full": {
+          "observe": "学生是否能围绕满意印痕组织画面。",
+          "ask_when": "作品堆满材料或看不出印痕重点时。",
+          "rescue_when": "画面杂乱、覆盖特色印痕或清洁失控时。",
+          "screen_when": "中段需要统一取舍标准时。",
+          "component_when": "需要作品中途互看和调整时。",
+          "evidence_when": "学生确定保留的关键印痕时。",
+          "proceed_when": "作品有关键印痕，并能说清纸材或印法来源。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "正式创作中段",
+          "content": "一主一辅画面提示 + 印痕过多/重点清楚作品对比 + 清理提示"
+        },
+        "component_trigger": {
+          "component_id": "gallery_walk_midpoint",
+          "component_name": "中途看一看",
+          "trigger_condition": "作品普遍堆叠印痕或重点不清时",
+          "student_problem_solved": "帮助学生把试验发现转化为画面取舍。",
+          "alternative_component": "before_after_compare",
+          "expected_evidence": "修改前后作品或口头取舍理由。"
+        },
+        "learning_sheet_trigger": {
+          "field": "作品取舍",
+          "prompt": "我最满意的印痕是……它来自……我保留它是因为……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "纸版画作品 + 取舍理由 + 清洁分工记录",
+          "collect_when": "作品完成前后",
+          "minimum_evidence": "作品中至少有一处可说明来源的印痕。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "第二、三阶段学习活动 / 单元学习目标",
+          "evidence": "充分利用纸材纹理形成作品；尝试用各种单色表达想法，丰富纸版画表现语言。",
+          "source_status": "source_evidence"
+        }
+      }
+    },
+    {
+      "event_id": "paper_print_event_07_gallery_reflection",
+      "event_name": "说一说：印痕展评与车间收束",
+      "default_teacher_visible": {
+        "teacher_focus": "展示时必须带试印证据，避免作品评价滑成“谁更漂亮”。",
+        "downstream_impact": {
+          "screen": "展示句式 + 纸材/印法/印痕/画面四类评价词 + 证据归档提醒",
+          "learning_sheet": "展评归档",
+          "evidence": "每组至少一份作品与试印证据配套归档。"
+        }
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "what_is_happening": "把展示从“谁的作品漂亮”转为纸材、印法、印痕效果和记录证据的综合说明。",
+          "why_it_matters": "学生评价容易空泛，只说漂亮、有创意，不能用纸材、印法、印痕等语言说明作品。",
+          "risk_if_skipped": [
+            "只说作品漂亮或颜色好。",
+            "忘记带上试印证据。",
+            "评价变成投票谁最好。"
+          ],
+          "minimum_success_signal": "每组至少一份作品与试印证据配套归档。"
+        },
+        "control_points_full": {
+          "observe": "学生评价是否使用纸材、印法、印痕语言。",
+          "ask_when": "学生只说漂亮、有趣或喜欢时。",
+          "rescue_when": "展示变成投票或作品证据脱节时。",
+          "screen_when": "展评开始前和评价空泛时。",
+          "component_when": "需要把作品和证据并置展示时。",
+          "evidence_when": "展示结束前统一归档。",
+          "proceed_when": "作品、试印记录和说明能配套留下。"
+        },
+        "screen_trigger": {
+          "trigger_condition": "展示评价开始前",
+          "content": "展示句式 + 纸材/印法/印痕/画面四类评价词 + 证据归档提醒"
+        },
+        "component_trigger": {
+          "component_id": "work_gallery",
+          "component_name": "作品画廊",
+          "trigger_condition": "作品完成并需要基于证据分享时",
+          "student_problem_solved": "让展评从喜好投票转为有依据的印痕说明。",
+          "alternative_component": "photo_submit",
+          "expected_evidence": "作品照片、试印记录和一句基于印痕的说明。"
+        },
+        "learning_sheet_trigger": {
+          "field": "展评归档",
+          "prompt": "我用了……纸，采用……印法，印出了……效果；同伴建议我……"
+        },
+        "evidence_trigger": {
+          "evidence_type": "作品 + 试印记录 + 展示说明 + 同伴建议",
+          "collect_when": "展示评价结束前",
+          "minimum_evidence": "每组至少一份作品与试印证据配套归档。"
+        },
+        "source_anchor": {
+          "sample": "有趣的纸印",
+          "anchor": "单元评价方案 / 第四阶段学习评价",
+          "evidence": "积极参与小组汇报讨论并与他人分享；布置“版画车间坊”；按要求完成任务。",
+          "source_status": "source_evidence"
+        }
+      }
+    }
+  ],
+  "boundary": {
+    "preview_only": true,
+    "teacher_confirmed": false,
+    "formal_apply_allowed": false,
+    "r97b_modified": false,
+    "ui_modified": false,
+    "runtime_connected": false,
+    "provider_model_connected": false,
+    "database_written": false
+  }
+}
